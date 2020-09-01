@@ -72,12 +72,12 @@
       // This list of students will be pulled from a file or database at some point
       // It's hardcoded here to facilitate testing
       $students = array(
-        array("Firstname1", "Lastname1", "Project Title 1"),
-        array("Firstname2", "Lastname2", "Project Title 2"),
-        array("Firstname3", "Lastname3", "Project Title 3"),
-        array("Firstname4", "Lastname4", "Project Title 4"),
-        array("Firstname5", "Lastname5", "Project Title 5"),
-        array("Firstname6", "Lastname6", "Project Title 6")
+        array("Firstname1", "Lastname1", "Project Title 1", "sample-student.png"),
+        array("Firstname2", "Lastname2", "Project Title 2", "sample-student.png"),
+        array("Firstname3", "Lastname3", "Project Title 3", "sample-student.png"),
+        array("Firstname4", "Lastname4", "Project Title 4", "sample-student.png"),
+        array("Firstname5", "Lastname5", "Project Title 5", "sample-student.png"),
+        array("Firstname6", "Lastname6", "Project Title 6", "sample-student.png")
       );
 
       // Each student's unique site will be composed of the base URL plus a username
