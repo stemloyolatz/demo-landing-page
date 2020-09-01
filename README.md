@@ -1,1 +1,1 @@
-# demo-landing-page
+# STEM Loyola Demos
