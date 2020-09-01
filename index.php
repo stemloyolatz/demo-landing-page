@@ -68,6 +68,24 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
+    <?php 
+      // This list of students will be pulled from a file or database at some point
+      // It's hardcoded here to facilitate testing
+      $students = array(
+        array("Firstname1", "Lastname1", "Project Title 1"),
+        array("Firstname2", "Lastname2", "Project Title 2"),
+        array("Firstname3", "Lastname3", "Project Title 3"),
+        array("Firstname4", "Lastname4", "Project Title 4"),
+        array("Firstname5", "Lastname5", "Project Title 5"),
+        array("Firstname6", "Lastname6", "Project Title 6")
+      );
+
+      // Each student's unique site will be composed of the base URL plus a username
+      // Username will be a concatenation of first name initial and the entire lastname
+      // For instance, Prince Krampah's site: https://demo.stemloyola.org/pkrampah
+      // Notice that the entire URL is in lower case
+      $BASE_URL = 'https://demo.stemloyola.org/';
+    ?>
     <h3>If you know, you know!</h3>
   </body>
 </html>
