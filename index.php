@@ -63,6 +63,8 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -86,6 +88,175 @@
       // Notice that the entire URL is in lower case
       $BASE_URL = 'https://demo.stemloyola.org/';
     ?>
-    <h3>If you know, you know!</h3>
+
+
+      <nav class="navbar navbar-custom navbar-light navbar-expand-lg shadow-sm mb-5">
+          <a class="navbar-brand sl-logo" href="/"><img src="images/stem-demo.png" height="48" alt=""></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#sl-topnav" aria-controls="sl-topnav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="sl-topnav" class="navbar-collapse collapse">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link sl-brand" href="#"><span class="sr-only">(current)</span></a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="{{ route('archives.home') }}"><h5>Archives</h5></a></li>
+             
+                  <li class="nav-item"><a class="nav-link" href="{{ route('resources.home') }}"><h5>Resources</h5></a></li>
+                
+                  <li class="nav-item"><a class="nav-link" href="{{ route('about.about') }}"><h5>About Us</h5></a></li>
+              </ul>
+          </div>
+      </nav>
+
+      <main>
+        <div class="container">
+          <div class="col-sm-12">
+            <!-- Description section -->
+            <div class="row">
+              <div class="d-flex flex-column align-items-center justify-content-center">
+
+                <div class="p-2">
+                  <h3 class="mb-1"><span class="stem-color">STEM</span> <span class="loyola-color">Loyola</span> Demos</h3>
+                </div>
+                <div class="p-2 description-text">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias libero maiores molestiae corporis 
+                    laudantium commodi est, totam labore ex quo.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Students detail section -->
+            <div class="row">
+              
+              <div class="card-columns mx-auto">
+                <!-- cards -->
+              
+                <div class="card shadow" style="width: 18rem;">
+                  <div class="card-body">
+                    <a href="#">
+                      <img src="images/sample-student.png" class="profile-img" />
+                    </a>
+                    <div class="text-center">
+                      <a href="#">
+                        <h5 class="card-title card-name">Moses Minja</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">Hello my name is Moses</h6>
+                      <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
+                      <a href="#" class="card-link">My site</a>
+                      <br>
+                      <br>
+                      <img src="images/stem-loyola-icon.png" alt="stemLoyola Logo" class="stem-icon">
+                    </div>
+                  </div>
+                </div>
+                
+
+                <div class="card shadow" style="width: 18rem;">
+                  <div class="card-body">
+                    <a href="#">
+                      <img src="images/sample-student.png" class="profile-img" />
+                    </a>
+                    <div class="text-center">
+                      <a href="#">
+                        <h5 class="card-title card-name">Baye Manga</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">Hello my name is Baye Manga</h6>
+                      <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
+                      <a href="#" class="card-link">My site</a>
+                      <br>
+                      <br>
+                      <img src="images/stem-loyola-icon.png" alt="stemLoyola Logo" class="stem-icon">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="card shadow" style="width: 18rem;">
+                  <div class="card-body">
+                    <a href="#">
+                      <img src="images/sample-student.png" class="profile-img" />
+                    </a>
+                    <div class="text-center">
+                      <a href="#">
+                        <h5 class="card-title card-name">Prince Krampah</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">Hello my name is Prince Krampah</h6>
+                      <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
+                      <a href="#" class="card-link">My site</a>
+                      <br>
+                      <br>
+                      <img src="images/stem-loyola-icon.png" alt="stemLoyola Logo" class="stem-icon">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="card shadow" style="width: 18rem;">
+                  <div class="card-body">
+                    <a href="#">
+                      <img src="images/sample-student.png" class="profile-img" />
+                    </a>
+                    <div class="text-center">
+                      <a href="#">
+                        <h5 class="card-title card-name">Samuel Danda</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">Hello my name is Samuel Danda</h6>
+                      <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
+                      <a href="#" class="card-link">My site</a>
+                      <br>
+                      <br>
+                      <img src="images/stem-loyola-icon.png" alt="stemLoyola Logo" class="stem-icon">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="card shadow" style="width: 18rem;">
+                  <div class="card-body">
+                    <a href="#">
+                      <img src="images/sample-student.png" class="profile-img" />
+                    </a>
+                    <div class="text-center">
+                      <a href="#">
+                        <h5 class="card-title card-name">Peniel Shimba</h5>
+                      </a>
+                      <h6 class="card-subtitle mb-2 text-muted">Hello my name is Peniel Shimba</h6>
+                      <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
+                      <a href="#" class="card-link">My site</a>
+                      <br>
+                      <br>
+                      <img src="images/stem-loyola-icon.png" alt="stemLoyola Logo" class="stem-icon">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer id="footer" class="row sl-footer-wrapper">
+          <div class="sl-footer sl-center-t sl-center-c">
+              <div class="sl-links">
+                  <a href="{{ route('about.about') }}">About</a>
+                  <a href="{{ route('about.privacy') }}">Privacy</a>
+                  <a href="{{ route('about.terms') }}">Terms</a>
+                  <a href="{{ route('about.contacts') }}">Contacts</a>
+              </div>
+              <div>
+                  Copyright  &copy; <a href="{{ route('home.public') }}">2019 STEMLoyola.org (Challenges)</a> <span>. All Rights Reserved</span>
+              </div>
+          </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
