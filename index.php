@@ -101,13 +101,6 @@
                       <a class="nav-link sl-brand" href="#"><span class="sr-only">(current)</span></a>
                   </li>
               </ul>
-              <ul class="navbar-nav">
-                  <li class="nav-item"><a class="nav-link" href="{{ route('archives.home') }}"><h5>Archives</h5></a></li>
-             
-                  <li class="nav-item"><a class="nav-link" href="{{ route('resources.home') }}"><h5>Resources</h5></a></li>
-                
-                  <li class="nav-item"><a class="nav-link" href="{{ route('about.about') }}"><h5>About Us</h5></a></li>
-              </ul>
           </div>
       </nav>
 
