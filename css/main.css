@@ -65,3 +65,8 @@
   height: 1.5rem;
   width: 1.5rem;
 }
+
+
+.onared{
+  border: 1px solid red !important;
+}

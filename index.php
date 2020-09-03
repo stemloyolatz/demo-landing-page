@@ -63,7 +63,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -126,62 +126,31 @@
               
               <div class="card-columns mx-auto">
                 <!-- cards -->
-                <?php
-
-                  for($student = 0; $student<sizeof($students); $student++){
-                    $index = 0;
-                    echo "<div class='card shadow' style='width: 18rem;'>
-                    <div class='card-body'>
-                      <a href=".$BASE_URL.strtolower($students[$student][0][0].$students[$student][1]).">
-                        <img src='images/".$students[$student][3]."' class='profile-img' />
+                <?php foreach ($students as $student): ?>
+                    <div class="card shadow my-4" style="width: 18rem;">
+                    <div class="card-body">
+                      <a href="<?= $BASE_URL.strtolower($student[0][0].$student[1]) ?>">
+                        <img src="images/<?= $student[3] ?>" class="profile-img" />
                       </a>
-                      <div class='text-center'>
-                        <a href=".$BASE_URL.strtolower($students[$student][0][0].$students[$student][1]).">
-                          <h5 class='card-title card-name'>".$students[$student][0]." ".$students[$student][1]."</h5>
+                      <div class="text-center">
+                        <a href="<?= $BASE_URL.strtolower($student[0][0].$student[1]) ?>">
+                          <h5 class="card-title card-name"><?php $student[0]." ".$student[1] ?></h5>
                         </a>
-                        <h6 class='card-subtitle mb-2 text-muted'>Hello my name is ". $students[$student][0]. "</h6>
-                        <p class='card-text'>Welcome to stem Loyols, click on the link below to see my website.</p>
-                        <a href=" .$BASE_URL.strtolower($students[$student][0][0].$students[$student][1])." class='card-link'>My site</a>
-                        <br>
-                        <br>
-                        <img src='images/stem-loyola-icon.png' alt='stemLoyola Logo' class='stem-icon'>
+                        <h6 class="card-subtitle mb-2 text-muted">Hello, my name is <?= $student[0] ?></h6>
+                        <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
+                        <a href="<?= $BASE_URL.strtolower($student[0][0].$student[1]) ?>" class="card-link">My site</a>
+                        <br><br>
+                        <img src="images/stem-loyola-icon.png" alt="STEMLoyola Logo" class="stem-icon">
                       </div>
                     </div>
-                  </div>";
-                    
-                    
-                  }
-                ?>
-                
-                
-                <!-- pure html for debugging -->
-
-                <!-- <div class="card shadow" style="width: 18rem;">
-                  <div class="card-body">
-                    <a href="#">
-                      <img src="images/sample-student.png" class="profile-img" />
-                    </a>
-                    <div class="text-center">
-                      <a href="#">
-                        <h5 class="card-title card-name">Baye Manga</h5>
-                      </a>
-                      <h6 class="card-subtitle mb-2 text-muted">Hello my name is Baye Manga</h6>
-                      <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
-                      <a href="#" class="card-link">My site</a>
-                      <br>
-                      <br>
-                      <img src="images/stem-loyola-icon.png" alt="stemLoyola Logo" class="stem-icon">
-                    </div>
                   </div>
-                </div>
-              -->
-
+                <?php endforeach; ?>
+                
               </div>
-              
             </div>
           </div>
         </div>
-      </main>
+      </main>d
 
       <footer id="footer" class="row py-md-3">
           <div class="sl-footer mx-auto">
