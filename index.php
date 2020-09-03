@@ -151,15 +151,18 @@
       </main>
 
       <footer id="footer" class="row py-md-3">
-          <div class="sl-footer mx-auto">
+          <div class="mx-auto">
               <div class="sl-links text-center">
                   <a class="mx-md-3" target="_blank" href="//challenges.stemloyola.org/about">About</a>
                   <a class="mx-md-3" target="_blank" href="//challenges.stemloyola.org/about/privacy">Privacy</a>
                   <a class="mx-md-3" target="_blank" href="//challenges.stemloyola.org/about/terms">Terms</a>
                   <a class="mx-md-3" target="_blank" href="//challenges.stemloyola.org/about/contacts">Contacts</a>
               </div>
-              <div>
+              <div class="text-center">
                   Copyright  &copy; <a href="/">2018 - 2020 STEMLoyola.org (Demo)</a> <span>. All Rights Reserved</span>
+              </div>
+              <div class="text-center">
+                  <i>Designed by <b><a target="_blank" href="//www.youtube.com/channel/UC3Bth5evCCliH6mNFk9BBOw">Prince Krampah</a></b></i>
               </div>
           </div>
       </footer>
