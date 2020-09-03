@@ -64,7 +64,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -86,9 +86,8 @@
       // Username will be a concatenation of first name initial and the entire lastname
       // For instance, Prince Krampah's site: https://demo.stemloyola.org/pkrampah
       // Notice that the entire URL is in lower case
-      $BASE_URL = 'https://demo.stemloyola.org/';
+      $BASE_URL = '//demo.stemloyola.org/';
     ?>
-
 
       <nav class="navbar navbar-custom navbar-light navbar-expand-lg shadow-sm mb-5">
           <a class="navbar-brand sl-logo" href="/"><img src="images/stem-demo.png" height="48" alt=""></a>
@@ -154,10 +153,10 @@
       <footer id="footer" class="row py-md-3">
           <div class="sl-footer mx-auto">
               <div class="sl-links text-center">
-                  <a class="mx-md-3" target="_blank" href="https://challenges.stemloyola.org/about">About</a>
-                  <a class="mx-md-3" target="_blank" href="https://challenges.stemloyola.org/about/privacy">Privacy</a>
-                  <a class="mx-md-3" target="_blank" href="https://challenges.stemloyola.org/about/terms">Terms</a>
-                  <a class="mx-md-3" target="_blank" href="https://challenges.stemloyola.org/about/contacts">Contacts</a>
+                  <a class="mx-md-3" target="_blank" href="//challenges.stemloyola.org/about">About</a>
+                  <a class="mx-md-3" target="_blank" href="//challenges.stemloyola.org/about/privacy">Privacy</a>
+                  <a class="mx-md-3" target="_blank" href="//challenges.stemloyola.org/about/terms">Terms</a>
+                  <a class="mx-md-3" target="_blank" href="//challenges.stemloyola.org/about/contacts">Contacts</a>
               </div>
               <div>
                   Copyright  &copy; <a href="/">2018 - 2020 STEMLoyola.org (Demo)</a> <span>. All Rights Reserved</span>
@@ -165,8 +164,8 @@
           </div>
       </footer>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
