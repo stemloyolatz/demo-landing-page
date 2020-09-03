@@ -74,12 +74,12 @@
       // This list of students will be pulled from a file or database at some point
       // It's hardcoded here to facilitate testing
       $students = array(
-        array("Firstname1", "Lastname1", "Project Title 1", "sample-student.png"),
-        array("Firstname2", "Lastname2", "Project Title 2", "sample-student.png"),
-        array("Firstname3", "Lastname3", "Project Title 3", "sample-student.png"),
-        array("Firstname4", "Lastname4", "Project Title 4", "sample-student.png"),
-        array("Firstname5", "Lastname5", "Project Title 5", "sample-student.png"),
-        array("Firstname6", "Lastname6", "Project Title 6", "sample-student.png")
+        array("Moses", "Minja", "Project Title 1", "sample-student.png"),
+        array("Baye", "Manga", "Project Title 2", "sample-student.png"),
+        array("Prince", "Krampah", "Project Title 3", "sample-student.png"),
+        array("Kevin", "James", "Project Title 4", "sample-student.png"),
+        array("Samuel", "Danda", "Project Title 5", "sample-student.png"),
+        array("Peniel", "Shimba", "Project Title 6", "sample-student.png")
       );
 
       // Each student's unique site will be composed of the base URL plus a username
@@ -133,28 +133,37 @@
               
               <div class="card-columns mx-auto">
                 <!-- cards -->
-              
-                <div class="card shadow" style="width: 18rem;">
-                  <div class="card-body">
-                    <a href="#">
-                      <img src="images/sample-student.png" class="profile-img" />
-                    </a>
-                    <div class="text-center">
-                      <a href="#">
-                        <h5 class="card-title card-name">Moses Minja</h5>
-                      </a>
-                      <h6 class="card-subtitle mb-2 text-muted">Hello my name is Moses</h6>
-                      <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
-                      <a href="#" class="card-link">My site</a>
-                      <br>
-                      <br>
-                      <img src="images/stem-loyola-icon.png" alt="stemLoyola Logo" class="stem-icon">
-                    </div>
-                  </div>
-                </div>
-                
+                <?php
 
-                <div class="card shadow" style="width: 18rem;">
+                  for($student = 0; $student<sizeof($students); $student++){
+                    $index = 0;
+                    echo "<div class='card shadow' style='width: 18rem;'>
+                    <div class='card-body'>
+                      <a href=".$BASE_URL.strtolower($students[$student][0][0].$students[$student][1]).">
+                        <img src='images/".$students[$student][3]."' class='profile-img' />
+                      </a>
+                      <div class='text-center'>
+                        <a href=".$BASE_URL.strtolower($students[$student][0][0].$students[$student][1]).">
+                          <h5 class='card-title card-name'>".$students[$student][0]." ".$students[$student][1]."</h5>
+                        </a>
+                        <h6 class='card-subtitle mb-2 text-muted'>Hello my name is ". $students[$student][0]. "</h6>
+                        <p class='card-text'>Welcome to stem Loyols, click on the link below to see my website.</p>
+                        <a href=" .$BASE_URL.strtolower($students[$student][0][0].$students[$student][1])." class='card-link'>My site</a>
+                        <br>
+                        <br>
+                        <img src='images/stem-loyola-icon.png' alt='stemLoyola Logo' class='stem-icon'>
+                      </div>
+                    </div>
+                  </div>";
+                    
+                    
+                  }
+                ?>
+                
+                
+                <!-- pure html for debugging -->
+
+                <!-- <div class="card shadow" style="width: 18rem;">
                   <div class="card-body">
                     <a href="#">
                       <img src="images/sample-student.png" class="profile-img" />
@@ -172,70 +181,10 @@
                     </div>
                   </div>
                 </div>
-
-
-                <div class="card shadow" style="width: 18rem;">
-                  <div class="card-body">
-                    <a href="#">
-                      <img src="images/sample-student.png" class="profile-img" />
-                    </a>
-                    <div class="text-center">
-                      <a href="#">
-                        <h5 class="card-title card-name">Prince Krampah</h5>
-                      </a>
-                      <h6 class="card-subtitle mb-2 text-muted">Hello my name is Prince Krampah</h6>
-                      <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
-                      <a href="#" class="card-link">My site</a>
-                      <br>
-                      <br>
-                      <img src="images/stem-loyola-icon.png" alt="stemLoyola Logo" class="stem-icon">
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="card shadow" style="width: 18rem;">
-                  <div class="card-body">
-                    <a href="#">
-                      <img src="images/sample-student.png" class="profile-img" />
-                    </a>
-                    <div class="text-center">
-                      <a href="#">
-                        <h5 class="card-title card-name">Samuel Danda</h5>
-                      </a>
-                      <h6 class="card-subtitle mb-2 text-muted">Hello my name is Samuel Danda</h6>
-                      <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
-                      <a href="#" class="card-link">My site</a>
-                      <br>
-                      <br>
-                      <img src="images/stem-loyola-icon.png" alt="stemLoyola Logo" class="stem-icon">
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="card shadow" style="width: 18rem;">
-                  <div class="card-body">
-                    <a href="#">
-                      <img src="images/sample-student.png" class="profile-img" />
-                    </a>
-                    <div class="text-center">
-                      <a href="#">
-                        <h5 class="card-title card-name">Peniel Shimba</h5>
-                      </a>
-                      <h6 class="card-subtitle mb-2 text-muted">Hello my name is Peniel Shimba</h6>
-                      <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
-                      <a href="#" class="card-link">My site</a>
-                      <br>
-                      <br>
-                      <img src="images/stem-loyola-icon.png" alt="stemLoyola Logo" class="stem-icon">
-                    </div>
-                  </div>
-                </div>
+              -->
 
               </div>
-
-
+              
             </div>
           </div>
         </div>
