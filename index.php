@@ -183,16 +183,16 @@
         </div>
       </main>
 
-      <footer id="footer" class="row sl-footer-wrapper">
-          <div class="sl-footer sl-center-t sl-center-c">
-              <div class="sl-links">
-                  <a href="{{ route('about.about') }}">About</a>
-                  <a href="{{ route('about.privacy') }}">Privacy</a>
-                  <a href="{{ route('about.terms') }}">Terms</a>
-                  <a href="{{ route('about.contacts') }}">Contacts</a>
+      <footer id="footer" class="row py-md-3">
+          <div class="sl-footer mx-auto">
+              <div class="sl-links text-center">
+                  <a class="mx-md-3" target="_blank" href="https://challenges.stemloyola.org/about">About</a>
+                  <a class="mx-md-3" target="_blank" href="https://challenges.stemloyola.org/about/privacy">Privacy</a>
+                  <a class="mx-md-3" target="_blank" href="https://challenges.stemloyola.org/about/terms">Terms</a>
+                  <a class="mx-md-3" target="_blank" href="https://challenges.stemloyola.org/about/contacts">Contacts</a>
               </div>
               <div>
-                  Copyright  &copy; <a href="{{ route('home.public') }}">2019 STEMLoyola.org (Challenges)</a> <span>. All Rights Reserved</span>
+                  Copyright  &copy; <a href="/">2020 STEMLoyola.org (Demo)</a> <span>. All Rights Reserved</span>
               </div>
           </div>
       </footer>
