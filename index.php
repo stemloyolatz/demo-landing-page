@@ -127,6 +127,7 @@
                 <?php foreach ($students as $student): ?>
                   <div class="card shadow my-4 mx-sm-2 col-12 col-sm-5 col-md-4 col-lg-3">
                     <div class="card-body my-4">
+                      <h5 class="text-center mb-4"><?= $student[2] ?></h5>
                       <a href="<?= $BASE_URL.strtolower($student[0][0].$student[1]) ?>" class="mx-auto d-block">
                         <img src="images/<?= $student[3] ?>" class="profile-img mx-auto d-block" />
                       </a>
@@ -143,7 +144,6 @@
                     </div>
                   </div>
                 <?php endforeach; ?>
-                
               </div>
             </div>
           </div>
