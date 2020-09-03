@@ -161,7 +161,7 @@
               <div class="text-center">
                   Copyright  &copy; <a href="/">2018 - 2020 STEMLoyola.org (Demo)</a> <span>. All Rights Reserved</span>
               </div>
-              <div class="text-center">
+              <div class="text-center mb-4">
                   <i>Designed by <b><a target="_blank" href="//www.youtube.com/channel/UC3Bth5evCCliH6mNFk9BBOw">Prince Krampah</a></b></i>
               </div>
           </div>
