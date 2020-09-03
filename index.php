@@ -107,7 +107,7 @@
       <main>
         <div class="container">
           <div class="col-sm-12">
-            <!-- Description section -->
+            <?php // Description section ?>
             <div class="row">
               <div class="d-flex flex-column align-items-center justify-content-center">
 
@@ -121,16 +121,15 @@
               </div>
             </div>
 
-            <!-- Students detail section -->
+            <?php // Students detail section ?>
             <div class="row">
               
-              <div class="card-columns mx-auto">
-                <!-- cards -->
+              <div class="row mx-auto justify-content-center">
                 <?php foreach ($students as $student): ?>
-                    <div class="card shadow my-4" style="width: 18rem;">
-                    <div class="card-body">
-                      <a href="<?= $BASE_URL.strtolower($student[0][0].$student[1]) ?>">
-                        <img src="images/<?= $student[3] ?>" class="profile-img" />
+                  <div class="card shadow my-4 mx-sm-2 col-12 col-sm-5 col-md-4 col-lg-3">
+                    <div class="card-body my-4">
+                      <a href="<?= $BASE_URL.strtolower($student[0][0].$student[1]) ?>" class="mx-auto d-block">
+                        <img src="images/<?= $student[3] ?>" class="profile-img mx-auto d-block" />
                       </a>
                       <div class="text-center">
                         <a href="<?= $BASE_URL.strtolower($student[0][0].$student[1]) ?>">
@@ -150,7 +149,7 @@
             </div>
           </div>
         </div>
-      </main>d
+      </main>
 
       <footer id="footer" class="row py-md-3">
           <div class="sl-footer mx-auto">
@@ -161,7 +160,7 @@
                   <a class="mx-md-3" target="_blank" href="https://challenges.stemloyola.org/about/contacts">Contacts</a>
               </div>
               <div>
-                  Copyright  &copy; <a href="/">2020 STEMLoyola.org (Demo)</a> <span>. All Rights Reserved</span>
+                  Copyright  &copy; <a href="/">2018 - 2020 STEMLoyola.org (Demo)</a> <span>. All Rights Reserved</span>
               </div>
           </div>
       </footer>
