@@ -110,7 +110,7 @@
             <div class="row">
               <div class="d-flex flex-column align-items-center justify-content-center">
 
-                <div class="p-2">
+                <div class="p-2 text-center">
                   <h3 class="mb-1"><span class="stem-color">STEM</span> <span class="loyola-color">Loyola</span> Demos</h3>
                 </div>
                 <div class="p-2 description-text">
@@ -136,7 +136,7 @@
                           <h5 class="card-title card-name"><?php $student[0]." ".$student[1] ?></h5>
                         </a>
                         <h6 class="card-subtitle mb-2 text-muted">Hello, my name is <?= $student[0] ?></h6>
-                        <p class="card-text">Welcome to stem Loyols, click on the link below to see my website.</p>
+                        <p class="card-text">Welcome to stem Loyola, click on the link below to see my website.</p>
                         <a href="<?= $BASE_URL.strtolower($student[0][0].$student[1]) ?>" class="card-link">My site</a>
                         <br><br>
                         <img src="images/stem-loyola-icon.png" alt="STEMLoyola Logo" class="stem-icon">
