@@ -82,6 +82,8 @@
         array("Peniel", "Shimba", "Project Title 6", "sample-student.png")
       );
 
+      asort( $students );
+
       // Each student's unique site will be composed of the base URL plus a username
       // Username will be a concatenation of first name initial and the entire lastname
       // For instance, Prince Krampah's site: https://demos.stemloyola.org/coder/pkrampah
@@ -159,7 +161,7 @@
                   <a class="mx-md-3" target="_blank" href="//challenges.stemloyola.org/about/contacts">Contacts</a>
               </div>
               <div class="text-center">
-                  Copyright  &copy; <a href="/">2018 - 2020 STEMLoyola.org (Demo)</a> <span>. All Rights Reserved</span>
+                  Copyright  &copy; <a href="/">2018 - 2020 STEMLoyola.org (Demos)</a> <span>. All Rights Reserved</span>
               </div>
               <div class="text-center mb-4">
                   <i>Designed by <b><a target="_blank" href="//www.youtube.com/channel/UC3Bth5evCCliH6mNFk9BBOw">Prince Krampah</a></b></i>
