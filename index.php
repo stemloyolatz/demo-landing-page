@@ -84,9 +84,9 @@
 
       // Each student's unique site will be composed of the base URL plus a username
       // Username will be a concatenation of first name initial and the entire lastname
-      // For instance, Prince Krampah's site: https://demo.stemloyola.org/pkrampah
+      // For instance, Prince Krampah's site: https://demos.stemloyola.org/coder/pkrampah
       // Notice that the entire URL is in lower case
-      $BASE_URL = '//demo.stemloyola.org/coder/';
+      $BASE_URL = '//demos.stemloyola.org/coder/';
     ?>
 
       <nav class="navbar navbar-custom navbar-light navbar-expand-lg shadow-sm mb-5">
