@@ -77,9 +77,14 @@
         array("Moses", "Minja", "Project Title 1", "sample-student.png"),
         array("Baye", "Manga", "Project Title 2", "sample-student.png"),
         array("Prince", "Krampah", "Project Title 3", "sample-student.png"),
-        array("Kevin", "James", "Project Title 4", "sample-student.png"),
+        array("Alvin", "Mrema", "Project Title 4", "sample-student.png"),
         array("Samuel", "Danda", "Project Title 5", "sample-student.png"),
-        array("Peniel", "Shimba", "Project Title 6", "sample-student.png")
+        array("Kefa", "Agwanda", "Project Title 6", "sample-student.png"),
+        array("Aboubakar", "Rajab", "Project Title 7", "sample-student.png"),
+        array("Peter", "Kinemu", "Project Title 8", "sample-student.png"),
+        array("David", "Mushi", "Project Title 9", "sample-student.png"),
+        array("Chrispin", "Lubava", "Project Title 10", "sample-student.png"),
+        array("Hija", "Peppino", "Project Title 11", "sample-student.png"),
       );
 
       asort( $students );
